@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_sming_vibrate_power_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="pref_sming_vibrate_power_texts">
+        <item>약하게</item>
+        <item>중간</item>
+        <item>강하게</item>
+    </string-array>
+
+    <string-array name="pref_attack_alarm_values">
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="pref_attack_alarm_texts">
+        <item>알람 안띄움</item>
+        <item>0분 전 알람</item>
+        <item>1분 전 알람</item>
+        <item>3분 전 알람</item>
+        <item>5분 전 알람</item>
+        <item>8분 전 알람</item>
+    </string-array>
+    <string-array name="pref_attack_alarm_noti_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="pref_attack_alarm_noti_texts">
+        <item>신호 없이</item>
+        <item>소리</item>
+        <item>진동</item>
+        <item>소리 + 진동</item>
+    </string-array>
+
+    <string-array name="pref_sming_folder_type_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="pref_sming_folder_type_texts">
+        <item>구분없음</item>
+        <item>가수별</item>
+        <item>날짜별</item>
+        <item>가수별/날짜별</item>
+        <item>날짜별/가수별</item>
+    </string-array>
+
+
+</resources>

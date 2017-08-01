@@ -1,0 +1,39 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <EditTextPreference
+            android:key="prefKeySpecialWord"
+            android:title="특문설정"
+            android:dialogTitle="특문을 입력해주세요. (최대 7자)"/>
+        <ListPreference
+            android:defaultValue="3"
+            android:key="prefKeyAlarmBeforeV2"
+            android:entries="@array/pref_attack_alarm_texts"
+            android:entryValues="@array/pref_attack_alarm_values"
+            android:summary="%s"
+            android:title="알람 설정"/>
+        <ListPreference
+            android:defaultValue="2"
+            android:key="prefKeyAlarmNoti"
+            android:entries="@array/pref_attack_alarm_noti_texts"
+            android:entryValues="@array/pref_attack_alarm_noti_values"
+            android:summary="%s"
+            android:title="알람 신호 설정"/>
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <!--<ListPreference-->
+        <!--android:defaultValue="180"-->
+        <!--android:entries="@array/pref_sync_frequency_titles"-->
+        <!--android:entryValues="@array/pref_sync_frequency_values"-->
+        <!--android:key="sync_frequency"-->
+        <!--android:negativeButtonText="@null"-->
+        <!--android:positiveButtonText="@null"-->
+        <!--android:title="@string/pref_title_sync_frequency"/>-->
+
+    <!--&lt;!&ndash; This preference simply launches an intent when selected. Use this UI sparingly, per-->
+         <!--design guidelines. &ndash;&gt;-->
+    <!--<Preference android:title="@string/pref_title_system_sync_settings">-->
+        <!--<intent android:action="android.settings.SYNC_SETTINGS"/>-->
+    <!--</Preference>-->
+
+</PreferenceScreen>

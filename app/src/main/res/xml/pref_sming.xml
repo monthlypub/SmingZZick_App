@@ -1,0 +1,83 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="진동 설정">
+        <CheckBoxPreference
+            android:key="prefKeyFirstShotVibrate"
+            android:defaultValue="true"
+            android:title="첫샷 뜨고 진동">
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:key="prefKeySongEndVibrate"
+            android:defaultValue="true"
+            android:title="음악 끝 15초전"
+            android:summary="멜론, 지니만 지원">
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:key="prefKeySmingVibrate"
+            android:defaultValue="true"
+            android:title="짤 저장하고 진동">
+        </CheckBoxPreference>
+        <ListPreference
+            android:defaultValue="1"
+            android:key="prefKeyVibratePower"
+            android:entries="@array/pref_sming_vibrate_power_texts"
+            android:entryValues="@array/pref_sming_vibrate_power_values"
+            android:summary="%s"
+            android:title="진동 세기"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="prefCategorySave"
+        android:title="짤 저장 설정">
+        <com.monpub.sming.sming.CaptureWidthPreference
+            android:title="짤 넓이"/>
+        <ListPreference
+            android:defaultValue="0"
+            android:key="prefKeyFirstFolderV2"
+            android:entries="@array/pref_sming_folder_type_texts"
+            android:entryValues="@array/pref_sming_folder_type_values"
+            android:summary="%s"
+            android:title="저장 폴더"/>
+        <CheckBoxPreference
+            android:key="prefKeySaveScreenshot"
+            android:defaultValue="false"
+            android:title="시작/끝 캡쳐 따로 저장"
+            android:summary="스크린샷 폴더에 저장">
+        </CheckBoxPreference>
+
+        <CheckBoxPreference
+            android:key="prefKeyOverdrawStatus"
+            android:defaultValue="true"
+            android:title="상태바 덮기">
+        </CheckBoxPreference>
+
+        <CheckBoxPreference
+            android:key="prefKeyBlockBanner"
+            android:defaultValue="false"
+            android:title="홍보 배너 보지 않기">
+        </CheckBoxPreference>
+
+
+    </PreferenceCategory>
+    <Preference
+        android:key="prefStaticDisabled"
+        android:summary="스밍 중에는 저장 설장 변경이 안됩니다."/>
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <!--<ListPreference-->
+        <!--android:defaultValue="180"-->
+        <!--android:entries="@array/pref_sync_frequency_titles"-->
+        <!--android:entryValues="@array/pref_sync_frequency_values"-->
+        <!--android:key="sync_frequency"-->
+        <!--android:negativeButtonText="@null"-->
+        <!--android:positiveButtonText="@null"-->
+        <!--android:title="@string/pref_title_sync_frequency"/>-->
+
+    <!--&lt;!&ndash; This preference simply launches an intent when selected. Use this UI sparingly, per-->
+         <!--design guidelines. &ndash;&gt;-->
+    <!--<Preference android:title="@string/pref_title_system_sync_settings">-->
+        <!--<intent android:action="android.settings.SYNC_SETTINGS"/>-->
+    <!--</Preference>-->
+
+</PreferenceScreen>

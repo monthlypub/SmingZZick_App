@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_item"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/header_height"
+                android:background="@color/main_item_head"
+                android:paddingLeft="16dp"
+                android:paddingRight="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="스밍"
+                    android:textColor="@color/main_item_head_text"
+                    android:textStyle="bold" android:textSize="20dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/add_sming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/selector_title_button"
+                        android:duplicateParentState="true"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="수동추가"
+                        android:textSize="16dp"
+                        android:textColor="@color/main_item_head_text"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_sming"
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@id/recycler_sming"
+                    android:layout_alignTop="@id/recycler_sming"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/empty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:shadowColor="#3333"
+                        android:shadowRadius="3"
+                        android:text="캡쳐된 스밍이 없네요."
+                        android:textColor="#5333"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:visibility="gone"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@drawable/gradient_divider"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/gradient_divider_revert"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/edit_sticker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/item_min_height"
+                android:paddingLeft="16dp"
+                android:paddingRight="12dp"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:text="스티커 설정"
+                    style="@style/TextMainItem"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/main_divider"/>
+
+            <RelativeLayout
+                android:id="@+id/sming_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/item_min_height"
+                android:paddingLeft="16dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:text="스밍 설정"
+                    style="@style/TextMainItem"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_youtube"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/main_divider"/>
+
+                <RelativeLayout
+                    android:id="@+id/youtube"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/item_min_height"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:text="유튭"
+                        style="@style/TextMainItem"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrow"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/header_height"
+                android:background="@color/main_item_head"
+                android:paddingLeft="16dp"
+                android:paddingRight="8dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="총공"
+                        android:textColor="@color/main_item_head_text"
+                        android:textStyle="bold" android:textSize="20dp"/>
+
+                    <ImageView
+                        android:id="@+id/play_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/header_height"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_play_circle_outline_white_36dp"
+                        android:visibility="gone"/>
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/progress_attack"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reload_attack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/selector_title_button"
+                        android:duplicateParentState="true"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="복붙인식"
+                        android:textColor="@color/main_item_head_text"
+                        android:textSize="16dp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_attack"
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@id/recycler_attack"
+                    android:layout_alignTop="@id/recycler_attack"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/empty_attack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:shadowColor="#3333"
+                        android:shadowRadius="3"
+                        android:text="예정된 총공이 없네요."
+                        android:textColor="#5333"
+                        android:textStyle="bold" android:textSize="20dp"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@drawable/gradient_divider"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/gradient_divider_revert"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/attack_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/item_min_height"
+                android:paddingLeft="16dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:text="총공 설정"
+                    style="@style/TextMainItem"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/main_divider"/>
+
+            <RelativeLayout
+                android:id="@+id/attack_builder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/item_min_height"
+                android:paddingLeft="16dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:text="총공 빌더"
+                    style="@style/TextMainItem"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow"/>
+            </RelativeLayout>
+            
+            <android.support.percent.PercentRelativeLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#E4255B">
+                <!--<ImageView-->
+                    <!--android:id="@+id/lovelyz"-->
+                    <!--app:layout_heightPercent="100%"-->
+
+                    <!--app:layout_aspectRatio="300.809%"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                <ImageView
+                    android:id="@+id/lovelyz"
+                    app:layout_heightPercent="100%"
+
+                    app:layout_aspectRatio="300.809%"
+                    android:scaleType="fitXY"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/main_item_head"/>
+
+                android:src="@drawable/bottom"/>
+            </android.support.percent.PercentRelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right|bottom"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"
+            app:backgroundTint="@android:color/white"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/startstop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/selecto_ic_fab"
+            app:backgroundTint="@color/main_play_tint"/>
+    </LinearLayout>
+
+</RelativeLayout>

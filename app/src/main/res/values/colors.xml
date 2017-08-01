@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <!--<color name="mainPink">#ffc0cb</color>-->
+    <color name="headerPink">#eea9b8</color>
+    <color name="main_item_head">#E60063</color>
+    <color name="main_item_head_text">#ffffff</color>
+    <color name="main_item">#FED325</color>
+    <color name="main_item_text">#A72470</color>
+    <color name="main_play_tint">#A72470</color>
+    <color name="main_divider">#33E60063</color>
+
+    <color name="setup_item_head">#E60063</color>
+    <color name="setup_item_head_text">#ffffff</color>
+    <color name="setup_item">#FED325</color>
+    <color name="setup_item_text">#000</color>
+    <color name="setup_divider">#33E60063</color>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+        <TableRow
+            android:minHeight="52dp">
+            <TextView
+                android:layout_width="@dimen/width_text_make_table_title"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="굵기"/>
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/outline_width"/>
+        </TableRow>
+
+        <TableRow
+            android:minHeight="52dp">
+            <TextView
+                android:layout_width="@dimen/width_text_make_table_title"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="색"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/outline_color"
+                    android:background="@drawable/repeat_pattern_bg_white"
+                    android:src="#000"/>
+            </FrameLayout>
+        </TableRow>
+    </TableLayout>
+
+
+
+</LinearLayout>

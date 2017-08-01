@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+        <TableRow
+            android:minHeight="52dp">
+            <TextView
+                android:layout_width="@dimen/width_text_make_table_title"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="폰트"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp">
+                <TextView
+                    android:id="@+id/text_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="기본폰트"
+                    android:background="#1000"/>
+            </FrameLayout>
+        </TableRow>
+        <TableRow
+            android:minHeight="52dp">
+            <TextView
+                android:layout_width="@dimen/width_text_make_table_title"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="굵기"/>
+            <SeekBar
+                android:id="@+id/text_stroke"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </TableRow>
+        <TableRow
+            android:minHeight="52dp">
+            <TextView
+                android:layout_width="@dimen/width_text_make_table_title"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="색"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp">
+                <ImageView
+                    android:id="@+id/text_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/repeat_pattern_bg_white"
+                    android:src="#fff"/>
+            </FrameLayout>
+        </TableRow>
+
+    </TableLayout>
+
+
+
+
+</LinearLayout>

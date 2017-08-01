@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "533317026599",
+    "firebase_url": "https://sming-2ea90.firebaseio.com",
+    "project_id": "sming-2ea90",
+    "storage_bucket": "sming-2ea90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533317026599:android:c6cdffdd9a4e9923",
+        "android_client_info": {
+          "package_name": "com.monpub.sming.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533317026599-ue7adp2ffhdk2j3ldoh853ne0levbt7s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.monpub.sming.debug",
+            "certificate_hash": "C2C8F9917AC326B1A929411351E6D33DD41BAC3E"
+          }
+        },
+        {
+          "client_id": "533317026599-a2vjlm48qgh239eap7jvh8s4f53k4efn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBg6SA1Z6Rnt9mjRfy6R4HMZmB7bVgM1Ns"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533317026599-a2vjlm48qgh239eap7jvh8s4f53k4efn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
